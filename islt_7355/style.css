@@ -1,6 +1,9 @@
 body
 
-h1 {color:#f9acb0} 
+h1 {color:#f9acb0;
+    margin:auto;
+    Text-align: center;
+font-size: xx-large;} 
 h2 {color:#545454;
     margin:auto;
 Text-align: center}
