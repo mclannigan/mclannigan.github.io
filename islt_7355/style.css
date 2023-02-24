@@ -26,13 +26,16 @@ div.qualities {
 
 }
 
-.qualities ul {
+.qualities li {
+    display:flex;
+    flex-direction: column;
+   justify-content: left;
     border: none;
-    list-style-type: square;
+    list-style-type: circle;
     text-align: left;
     color: #545454;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     margin-top: 0;  
-    margin-left: 10px;
+    margin-left: 1px;
 }
