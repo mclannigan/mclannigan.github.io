@@ -6,7 +6,8 @@ h1 {color:#f9acb0;
 font-size: xx-large;} 
 h2 {color:#545454;
     margin:auto;
-Text-align: center}
+text-align: center}
+
 
  
 div.pinklink {
@@ -38,4 +39,34 @@ div.qualities {
     font-size: 15px;
     margin-top: 0;  
     margin-left: 1px;
+}
+
+
+
+
+div.reflections {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+div.reflections section:first-of-type p:first-of-type::first-letter {
+    font-size: 3em;
+    color: #f9acb0;
+    text-align: left;
+    text-indent: 0em;
+}
+
+div.reflections p {
+    text-indent: 2em;
+  }
+
+  div.reflections .no-indent {
+    text-indent: 0;
+  }
+div.reflections h2 {color:#545454;
+    margin:auto;
+text-align: justify;
+margin-bottom: 30px;
+margin-top: 50px;
 }
