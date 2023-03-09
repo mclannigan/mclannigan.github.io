@@ -1,6 +1,3 @@
-#hamburger {
-  display: none;
-}
 
 nav ul {
   display: flex;
@@ -94,56 +91,58 @@ nav ul {
     }
 
  
-    @media only screen and (max-width: 640px) {
-      header {
-      position: relative;
-              height: 40px;
-              display: block;
-              background-color: cadetblue;
-              width: 100%;        
-      }
-      #hamburger {
-      display: inline-block;
-              padding-left: 20px;
-              width: 26px;
-              float: left;
-              font-size: 2em;
-      }
-      nav ul, nav:active ul {
-      display: none;
-      position: absolute;
-      padding: 20px 20px 20px 0px;
-      top: 20px;
-      }
-      nav:hover ul {
-      display: block;
-      }
-           nav:hover #mobileHide {
-      display: none;
-      }
-      nav li {
-      text-align: center;
-      padding: 0;
-      margin: 0;
-      }
-          nav>ul li {
-          text-align: left;
-          font-weight: bold;
-          color: darkmagenta;
-          float: left;
-      }
-      nav a {
-          text-decoration: none;
-          display: inline-block;
-          border-top: none;
-          border-bottom: none;
-          padding: 15px 0px 15px 35px;
-          width: 240px;
-          margin-bottom: 2px;
-      }
-      nav .lastMobile {border-bottom: 3px dotted magenta;}
-          nav ul li ul {
-              display:none;
-          }
-      }
- 
+    /* hide the topnav by default */
+.topnav {
+  display: none;
+}
+
+/* show the topnav when the hamburger is clicked */
+#hamburger:checked ~ .topnav {
+  display: block;
+}
+
+/* style the hamburger icon */
+#hamburger {
+  display: none;
+}
+
+label[for="hamburger"] {
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+
+/* media query for smaller screens */
+@media screen and (max-width: 600px) {
+  #hamburger {
+    display: inline-block;
+  }
+
+  .topnav li {
+    display: none;
+  }
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 601px) {
+  #hamburger {
+    display: none; !important;
+  }
+
+  .topnav {
+    display: block !important; /* override default "display: none;" */
+  }
+
+  .topnav li {
+    display: inline-block;
+  }
+
+  .topnav ul {
+    margin-right: 20px;
+  }
+}
