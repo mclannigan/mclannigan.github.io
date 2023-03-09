@@ -1,3 +1,6 @@
+#hamburger {
+  display: none;
+}
 
 nav ul {
   display: flex;
@@ -99,7 +102,7 @@ nav ul {
               background-color: cadetblue;
               width: 100%;        
       }
-      #topnav {
+      #hamburger {
       display: inline-block;
               padding-left: 20px;
               width: 26px;
