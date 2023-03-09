@@ -2,8 +2,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     margin: 0;
-    padding-left: 5;
+    padding-left: 5px;
 }
+
 
 h1 {
     color: #f9acb0;
@@ -97,9 +98,10 @@ div.reflections h2 {
 }
 
 #left-column {
-    width: 700px;
+    padding: 0 20px;
     float: left;
-}
+  }
+  
 
 div.qualities ul {
     display: flex;
@@ -125,6 +127,7 @@ div.qualities ul {
 
     #left-column {
         width: 70%;
+        text-align: left;
     }
     img {
         width 100%;
