@@ -91,5 +91,56 @@ nav ul {
     }
 
  
-
+    @media only screen and (max-width: 640px) {
+      header {
+      position: relative;
+              height: 40px;
+              display: block;
+              background-color: cadetblue;
+              width: 100%;        
+      }
+      #topnav {
+      display: inline-block;
+              padding-left: 20px;
+              width: 26px;
+              float: left;
+              font-size: 2em;
+      }
+      nav ul, nav:active ul {
+      display: none;
+      position: absolute;
+      padding: 20px 20px 20px 0px;
+      top: 20px;
+      }
+      nav:hover ul {
+      display: block;
+      }
+           nav:hover #mobileHide {
+      display: none;
+      }
+      nav li {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      }
+          nav>ul li {
+          text-align: left;
+          font-weight: bold;
+          color: darkmagenta;
+          float: left;
+      }
+      nav a {
+          text-decoration: none;
+          display: inline-block;
+          border-top: none;
+          border-bottom: none;
+          padding: 15px 0px 15px 35px;
+          width: 240px;
+          margin-bottom: 2px;
+      }
+      nav .lastMobile {border-bottom: 3px dotted magenta;}
+          nav ul li ul {
+              display:none;
+          }
+      }
  
