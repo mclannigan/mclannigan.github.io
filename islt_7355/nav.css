@@ -69,15 +69,8 @@ nav ul {
     display: block;
     }
 
-    .sticky {
-      position: fixed;
-      top: 0;
-      width: 100%;
-    }
     
-    .sticky + .content {
-      padding-top: 60px;
-    }
+
 
 
 
@@ -139,9 +132,10 @@ nav ul {
   .menu {
     text-align: center;
     width: 100%;
+    display: none;
   }
   .menu a {
-    display: block;
+    display: none;
     border-bottom: 1px solid #eaeaeb;
     margin: 0;
 
