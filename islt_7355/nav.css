@@ -189,8 +189,6 @@ label {
   .menu ul {
     flex-direction: column;
     height: auto;
-    background-color: #eaeaeb;
-    position: absolute;
   }
   .menu li {
     float: none;
