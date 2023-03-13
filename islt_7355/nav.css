@@ -22,6 +22,7 @@ nav ul {
   background-color: #ffffff;
   height: 150px;
   align-items: center;
+  position: relative; /* NEW */
 }
 
 .menu a {
@@ -90,6 +91,7 @@ ul li ul:hover {
   display: inline-flex;
   flex-direction: column;
   font-size: medium;
+  z-index: 999; /* NEW */
 }
 
 ul li ul li {
