@@ -1,4 +1,3 @@
-
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -15,16 +14,16 @@ nav ul {
   display: flex;
 }
 
-
 .menu {
-    list-style-type: none;
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-    background-color:#ffffff ;
-    height: 150px;
-    align-items: center;
-  }
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #ffffff;
+  height: 150px;
+  align-items: center;
+}
+
 .menu a {
   clear: right;
   text-decoration: none;
@@ -32,101 +31,94 @@ nav ul {
 
 .menu ul {
   display: inline-block;
-  color:#545454;
-  font-size:30px;
+  color: #545454;
+  font-size: 30px;
   margin: auto;
   width: 100%;
-  vertical-align: middle; 
-  height: 150px
+  vertical-align: middle;
+  height: 150px;
 }
-  li {
-    float: left;
-    text-align: center;
-    list-style-type: none;
-  }
-  
-  .menu li a {
-    display: block;
-    color: #545454;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .menu li a:hover {
-    background-color: #ffa297;
-  }
 
-  nav ul>li ul {
-    position: absolute;
-    margin-top: 0;
-    margin-left: 100%;
-    display: none;
-    }
-    
-   
-    nav>ul>li:hover>ul{
-    display: block;
-    }
+li {
+  float: left;
+  text-align: center;
+  list-style-type: none;
+}
 
-    
+.menu li a {
+  display: block;
+  color: #545454;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
+.menu li a:hover {
+  background-color: #ffa297;
+}
 
+nav ul > li ul {
+  position: absolute;
+  margin-top: 0;
+  margin-left: 100%;
+  display: none;
+}
 
+nav > ul > li:hover > ul {
+  display: block;
+}
 
-    ul li ul {
-      visibility: hidden;
-      opacity: 0;
-      position: absolute;
-      z-index: 1;
-      background-color: #ffffff;
-      width: 100%;
-      margin-top: 1rem;
-      left: 0;
-      display: none;
-      font-size: 15px;
-      padding: 5px;
-    }
-    
-    ul li:hover > ul,
-    ul li ul:hover {
-      visibility: visible;
-      opacity: 1;
-      position: relative;
-      display:inline-flex;
-      flex-direction:column;
-      font-size: medium;
-    
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  background-color: #ffffff;
+  width: 100%;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+  font-size: 15px;
+  padding: 5px;
+}
 
-    }
-    ul li ul li {
-      clear: both;
-      width: 100%;
-      background-color:white;
-    }
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  font-size: medium;
+}
 
- 
-  span {
-      color: beige;
-    }
-  label {
-    margin: 0 40px 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    display: none;
-    width: 26px;
-    float:right;
-  }
+ul li ul li {
+  clear: both;
+  width: 100%;
+  background-color: white;
+}
 
- /* (C) HIDE HAMBURGER */
-#hamnav label, #toggle { display: none; }
+span {
+  color: beige;
+}
 
-   
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+}
 
-
+/* (C) HIDE HAMBURGER */
+#hamnav label,
+#toggle {
+  display: none;
+}
 
 /* [ON SMALL SCREENS] */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   /* (A) BREAK INTO VERTICAL MENU */
   #hamitems a {
     box-sizing: border-box;
@@ -134,6 +126,9 @@ nav ul {
     width: 100%;
     border-top: 1px solid #333;
   }
+
+  /* (B) SHOW HAMBURGER
+
 
   /* (B) SHOW HAMBURGER ICON */
   #hamnav label {
@@ -146,9 +141,20 @@ nav ul {
   }
 
   /* (C) TOGGLE SHOW/HIDE MENU */
-  #hamitems { display: none; }
-  #hamnav input:checked ~ #hamitems { display: block; 
-  background-color: #eaeaeb;}
+  #hamitems { 
+    display: none; 
+  }
+  
+  /* (D) HIDE IMAGE WHEN HAMBURGER IS CLICKED */
+  #toggle:checked ~ #hamitems img {
+    display: none;
+  }
+  
+  #hamnav input:checked ~ #hamitems { 
+    display: block; 
+    background-color: #eaeaeb;
+  }
+
 
   .menu-toggle {
     display: block;
@@ -168,4 +174,14 @@ nav ul {
 }
 
 
+@media screen and (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    height: auto;
+  }
+  .menu li {
+    float: none;
+    text-align: left;
+  }
+}
 
