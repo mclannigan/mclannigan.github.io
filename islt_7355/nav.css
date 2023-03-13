@@ -12,7 +12,6 @@ html {
   margin: 0 auto;
 }
 
-
 .nav {
   border-bottom: 1px solid #eaeaeb;
   text-align: right;
@@ -23,7 +22,6 @@ html {
 
 nav ul {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .menu {
@@ -112,8 +110,6 @@ ul li ul li {
   background-color: white;
 }
 
-
-
 label {
   margin: 0 40px 0 0;
   font-size: 26px;
@@ -128,6 +124,7 @@ label {
 #toggle {
   display: none;
 }
+
 
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px) {
@@ -174,9 +171,8 @@ label {
   }
   
   
-  #hamnav input:checked ~ #hamitems { 
-    display: block; 
-    background-color: #eaeaeb;
+  #hamnav input[type="checkbox"]:not(:checked) ~ #hamitems {
+    display: none;
   }
 
   /* (E) DROPDOWN MENU STYLES */
