@@ -23,6 +23,7 @@ html {
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu {
@@ -123,14 +124,10 @@ label {
 }
 
 /* (C) HIDE HAMBURGER */
-#hamnav label {
+#hamnav label,
+#toggle {
   display: none;
 }
-
-#toggle:checked ~ #hamnav label {
-  display: inline-block;
-}
-
 
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px) {
@@ -139,6 +136,7 @@ label {
   #hamitems a {
     box-sizing: border-box;
     display: block;
+
     width: 100%;
     border-top: 1px solid #333;
     background-color: #ffa297; /* set the background color */
