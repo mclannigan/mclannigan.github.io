@@ -100,9 +100,7 @@ ul li ul li {
   background-color: white;
 }
 
-span {
-  color: beige;
-}
+
 
 label {
   margin: 0 40px 0 0;
@@ -137,8 +135,10 @@ label {
     color: #545454;
     background: #ffa297;
     font-style: normal;
+    font-weight: bold;
     font-size: 1.2em;
     padding: 5px;
+    position: absolute;
   }
 
   /* (C) TOGGLE SHOW/HIDE MENU */
