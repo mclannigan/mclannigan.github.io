@@ -118,8 +118,9 @@ nav ul {
     float:right;
   }
 
-  #toggle { 
-    display: none}
+ /* (C) HIDE HAMBURGER */
+#hamnav label, #toggle { display: none; }
+
    
 
 
@@ -141,20 +142,30 @@ nav ul {
     background: #ffa297;
     font-style: normal;
     font-size: 1.2em;
-    padding: 10px;
+    padding: 5px;
   }
 
   /* (C) TOGGLE SHOW/HIDE MENU */
   #hamitems { display: none; }
   #hamnav input:checked ~ #hamitems { display: block; 
   background-color: #eaeaeb;}
+
+  .menu-toggle {
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .menu-toggle label {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  
 }
 
-/* [DOES NOT MATTER] */
-html, body {
-  padding: 0;
-  margin: 0;
-  font-family: arial, sans-serif;
-}
 
 
