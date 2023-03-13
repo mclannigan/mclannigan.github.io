@@ -177,7 +177,7 @@ div.qualities li {
     text-align: center;
     background-color: white;
     padding-left: 0;
-    font-size: x-small; !important
+    font-size: x-small !important;
   }
   .grid-container {
     display: grid;
@@ -213,15 +213,7 @@ div.qualities li {
     height: auto;
   }
 
- .video-container {
-    
-}
-        
-      
-  
-  .video-container iframe {
-   
-  }
+
   
 @media screen and (max-width: 959px) {
     #container {
@@ -236,9 +228,23 @@ div.qualities li {
         text-align: left;
     }
     img {
-        width: 50%;
+        width: 100%;
     }
 }
 
+@media screen and (max-width: 640px) {
+    #right-column {
+        width: 100%;
+    }
+    #left-column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #container {
+        width: 320px;
+    }
+}
 
   
