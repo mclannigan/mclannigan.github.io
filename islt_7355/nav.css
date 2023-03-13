@@ -1,6 +1,17 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 
 .nav {
   border-bottom: 1px solid #eaeaeb;
@@ -126,6 +137,9 @@ label {
     display: block;
     width: 100%;
     border-top: 1px solid #333;
+    background-color: #ffa297; /* set the background color */
+    color: #545454;
+    padding: 10px;
   }
 
 
@@ -201,6 +215,12 @@ label {
     float: none;
     text-align: left;
   }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
 }
 
 
