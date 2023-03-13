@@ -143,8 +143,14 @@ label {
 
   /* (C) TOGGLE SHOW/HIDE MENU */
   #hamitems { 
-    display: none; 
-  }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 0 20px;
+      height: 80px;
+    }
+    
   
   /* (D) HIDE IMAGE WHEN HAMBURGER IS CLICKED */
   #toggle:checked ~ #hamitems img {
