@@ -137,8 +137,8 @@ nav ul {
   /* (B) SHOW HAMBURGER ICON */
   #hamnav label {
     display: inline-block;
-    color: rgb(23, 0, 128);
-    background: #a0208b;
+    color: #545454;
+    background: #ffa297;
     font-style: normal;
     font-size: 1.2em;
     padding: 10px;
@@ -146,7 +146,7 @@ nav ul {
 
   /* (C) TOGGLE SHOW/HIDE MENU */
   #hamitems { display: none; }
-  #hamnav input:checked ~ #hamitems { display: block; }
+  #hamnav input:checked ~ #hamitems { display: inline block; }
 }
 
 /* [DOES NOT MATTER] */
