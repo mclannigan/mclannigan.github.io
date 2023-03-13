@@ -119,6 +119,7 @@ label {
 
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px) {
+ 
   /* (A) BREAK INTO VERTICAL MENU */
   #hamitems a {
     box-sizing: border-box;
@@ -126,8 +127,6 @@ label {
     width: 100%;
     border-top: 1px solid #333;
   }
-
-  /* (B) SHOW HAMBURGER
 
 
   /* (B) SHOW HAMBURGER ICON */
@@ -155,6 +154,18 @@ label {
     background-color: #eaeaeb;
   }
 
+  /* (E) DROPDOWN MENU STYLES */
+  .menu ul ul {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    z-index: 999;
+  }
+
+  .menu ul ul li {
+    display: block;
+    width: 100%;
+  }
 
   .menu-toggle {
     display: block;
@@ -171,10 +182,7 @@ label {
     padding: 0;
   }
   
-}
-
-
-@media screen and (max-width: 768px) {
+ /* (F) DROPDOWN VERTICAL*/
   .menu ul {
     flex-direction: column;
     height: auto;
@@ -184,4 +192,6 @@ label {
     text-align: left;
   }
 }
+
+
 
