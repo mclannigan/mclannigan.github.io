@@ -123,10 +123,14 @@ label {
 }
 
 /* (C) HIDE HAMBURGER */
-#hamnav label,
-#toggle {
+#hamnav label {
   display: none;
 }
+
+#toggle:checked ~ #hamnav label {
+  display: inline-block;
+}
+
 
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px) {
@@ -167,9 +171,10 @@ label {
     
   
   /* (D) HIDE IMAGE WHEN HAMBURGER IS CLICKED */
-  #toggle:checked ~ #hamitems img {
+  #toggle:checked ~ #hamitems .logo img {
     display: none;
   }
+  
   
   #hamnav input:checked ~ #hamitems { 
     display: block; 
