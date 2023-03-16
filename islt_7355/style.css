@@ -98,7 +98,7 @@ a {
   }
 
   a:hover {
-    color: blue;
+    color: #f9acb0;
   }
 
 div.reflections {
@@ -213,6 +213,30 @@ div.qualities li {
     height: auto;
   }
 
+  .projecttable {
+    border-collapse: collapse;
+  }
+  .projecttable th {
+    color:#545454;
+    text-align: center;
+    background-color: #f9acb0;
+    
+  }
+  .projecttable td {
+    border: 1px solid #545454;
+    vertical-align: top;
+  }
+
+  .projecttable td:nth-child(4) {
+    font-size: smaller;
+    width: 25%;
+  }
+  
+  .projecttable td:nth-child(1) {
+    font-weight: bold;
+  }
+  
+  
 
   
 @media screen and (max-width: 959px) {

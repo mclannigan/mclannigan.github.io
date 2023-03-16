@@ -1,63 +1,141 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-
-<!--
-
-Title:
-
-Use: 
-
-Author:
-
-School/Term: 
-
-Developed:
-
-Tested: 
-
--->
-               <meta charset="utf-8">
-               <title>McKay Lannigan's Website</title>
-               <link rel="stylesheet" href="style.css">
-               <link rel="stylesheet" href="nav.css">
-</head>
-<body>
-        <header>
-            <div class="nav">
-               <nav>
-                  <label for="toggle">&#9776;</label>
-                  <input type="checkbox" id="toggle"/>
-                  <div class="menu">
-                      <ul>
-                        <li>
-                           <img src="Logo.svg" alt="logo" width="100" height="100">
-                        </li>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li>
-                           <a href="project.html">Portfolio</a>
-                           <ul>
-                              <li><a href="#link1">Link 1</a></li>
-                              <li><a href="#link2">Link 2</a></li>
-                              <li><a href="#link3">Link 3</a></li>
-                           </ul>
-                        </li>
-                        <li><a href="reflection.html">Reflection</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+<html lang="en">
+   <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta charset="utf-8">
+       <title>Home Page</title>
+       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="nav.css">
+   </head>
+   <body>
+     <!-- (A) MENU WRAPPER -->
+     <nav id="hamnav">
+         <!-- (B) THE HAMBURGER -->
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+          <!-- (C) MENU ITEMS -->
+            <div class="dropdown" id="hamitems">
+                <ul>
+                  <li>
+                     <img src="Logo.svg" alt="logo" width="100" height="100">
+                  </li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li>
+                     <a href="project.html">Portfolio</a>
+                     <ul>
+                        <li><a href="#link1">Link 1</a></li>
+                        <li><a href="#link2">Link 2</a></li>
+                        <li><a href="#link3">Link 3</a></li>
                      </ul>
-      
-                  </div>
-                     
-                 </nav> 
-              </div>
+                  </li>
+                  <li><a href="reflection.html">Reflection</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+               </ul>
+            </div>     
+           </nav> 
                
-            </header>
     <main>
-        <p>Welcome to my website</p>
+
+       <table class="projecttable">
+         <tr>
+            <th>PROJECT</th>
+            <th>SUMMARY</th>
+            <th>ARTIFACTS</th>
+            <th>GOALS</th>
+            <th>COMPETENCIES</th>
+            <th>ALIGNMENT</th>
+         </tr>
+  <tr>
+    <td>Leadership with Ted Lasso</td>
+    <td>This mini-course invites learners to look at the great Ted Lasso and how he is an effective leader. </td>
+    <td><a href="#link1">Course Overview</a></td>
+    <td>Goal 1: To provide students with experiences to develop theory-grounded 
+         and research-based competencies for the innovative, 
+         aesthetic, effective and sustainable design/development and management of 
+         technologies for learning opportunities and systems.
+         <br>
+      <br>
+      Objective 1.1: Students are able to design/develop learning and performance opportunities and systems 
+            including direct instruction, constructivist learning, collaborative work, and performance support.
+            <br>
+         
+      <br>Objective 1.2: Students are able to design/develop learning opportunities and systems for meaningful learning;
+             promote student engagement in online learning environments; and select appropriate technology and learning 
+             objects to support learners.
+             <br>
+       <br>Objective 1.3: Students are able to conduct project management activities for both design/development, 
+            and implementation of learning opportunities and systems.
+    </td>
+    <td>Design and Development of learning systems: <br>
+      <br> I am able to design and develop innovative, 
+      aesthetic, effective and sustainable learning technologies based on theory-grounded research.</td>
+    <td>This course includes direct instruction, collaborative work, and support.
+      This course has virtual discussion opportunities.  <br>Furthermore, this course was developed intentionally to facilitate learning in a virtual environment
+      </td>
+   
+   </tr>
+  <tr>
+   <td>JamBoard Learning</td>
+    <td>As teachers and staff return to Missouri Military Academy and Independent Schools of St. Louis (ISSL) every year, this group of researchers noticed the insufficiency level in the onboarding processes, 
+      specifically technology training. 
+      This insufficiency has led to early teacher burnout and anxiety surrounding the perceived lack of time to prepare for implementation of curriculum. 
+      The long-term goals of this project are to move this training to an online module to streamline information from Human Resources, Information Technology, and administration. 
+      The focus of this semester project will be primarily on training modules dedicated to learning and implementing Jamboard in various areas in the classroom. 
+      This streamlining will hopefully eliminate unnecessary stress factors that highly impact our educators.</td>
+    <td>
+         <a href="#link1">Jamboard main slides</a>
+         <br>
+         <a href="#link2">Interview questions</a>
+         <br>
+         <a href="#link3">Entire training</a>
+    </td>
+    <td>
+      Goal 2: To provide students with experiences to develop skills in data collection, 
+      analysis and evaluation for reflecting on and applying to the design/development of learning opportunities and systems.
+   <br>
+   <br>
+      Objective 2.1: Students are able to conduct analysis in order to translate and use theoretical frameworks 
+         and existing research to design/develop learning opportunities and systems.
+         <br>
+    <br>Objective 2.2: Students are able to manage and optimize analytics collected by 
+         learning and performance systems to develop criteria to measure learning impact and talent development.
+</td>
+    <td>Front-End Analysis and System Evaluation: <br><br>I developed critical and analytical skills for data collection 
+      and evaluation and can reflect and apply these skills to assess and evaluate learning systems.</td>
+    <td>I created a needs analysis and used that data to evaluate current systems and create a more effective learning system for teachers at ISSL</td>
+  </tr>
+  <tr>
+   <td>SOARbucks</td>
+   <td> I managed a full-scale opening of a coffee shop at a local high school. 
+      This coffee shop created a culture of belonging and great coffee.  
+      This met students needs in both school culture and buy-in while serving as a site for community service hours.
+      </td>
+   <td>
+  
+      <a href="#link1">Detailed Overview</a>
+      <br>
+      <br>
+      <a href="#link2">WBSs</a>
+  
+   </td>
+   <td>Goal 3: To provide students with experiences to become socially responsible, 
+      reflective/sensitive on the interaction of technologies & society and act ethically 
+      in response to current and future challenges of emerging technologies for learning.
+   <br>
+   <br>
+   Objective 3.1: Students demonstrate technology leadership and knowledge of ethics as 
+         applied to current and future socio-technical context.
+  </td>
+   <td>Leadership & Social Responsibility: <br><br>I developed competencies for socially responsible technology leadership.</td>
+   <td>I created spaces for leaders and administration to give feedback and support in inclusive ways.</td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
     </main>
-    <footer>
-        <p>&copy;2023 McKay Lannigan - Author: McKay Lannigan - mjly9k@umsystem.edu</p>
-    </footer>
-</body>
+<footer>
+   <p>&copy;2023 McKay Lannigan - Author: McKay Lannigan - mjly9k@umsystem.edu</p>
+</footer>
 </html>
