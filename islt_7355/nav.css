@@ -4,7 +4,7 @@ html {
 
 /* [ON BIG SCREENS] */
 
-div.dropdown {
+.dropdown {
   border-bottom: 1px solid #eaeaeb;
   text-align: right;
   height: 70px;
@@ -55,8 +55,8 @@ div.dropdown ul {
 
 
 
+
 nav ul > li ul {
-  position: absolute;
   margin-top: 0;
   margin-left: 100%;
   display: none;
