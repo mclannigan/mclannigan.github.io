@@ -1,114 +1,118 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Regular.ttf') format('truetype');
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin: 0;
-    padding-left: 30px;
-    
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+  margin: 0;
+  padding-left: 1.563em;
 }
 
 h1 {
-    color: #f9acb0;
-    margin: auto;
-    text-align: center;
-    font-size: xx-large;
+  font-family: 'Roboto', sans-serif;
+  color: #f9acb0;
+  margin: auto;
+  text-align: center;
+  font-size: 2.25em;
 }
 
+
 img {
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1.25em;
+}
 
 h2 {
-    color: #545454;
-    margin: auto;
-    text-align: center;
+  color: #545454;
+  margin: auto;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 p {
-    font-size: large;
-    padding-left: 10px;
-    line-height: 1.25;
+  font-size: 1.25em;
+  padding-left: 0.625em;
+  line-height: 1.25;
 }
 
-
 blockquote {
-    padding-bottom: 50px;
-    text-align: center;
-    font-family: cursive;
+  padding-bottom: 3.125em;
+  text-align: center;
+  font-family: cursive;
 }
 
 p:first-of-type {
-    margin-bottom: 1px;
-  }
+  margin-bottom: 0.063em;
+}
 
-div.qualities {
-    color: #545454;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    padding-left: 4px;
-
+.qualities {
+  color: #545454;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding-left: 0.25em;
 }
 
 .qualities table {
-    border-color: #f9acb0;
-    border-collapse: collapse;
-    width: 100%;
-
-  }
-  
-  td {
-    padding: 10px;
-    padding-left: 30px;
-    text-align: left;
-  }
-
-  th {
-    padding: 10px;
-    padding-left: 20px;
-    text-align: left;
-  }
-
-.qualities li {
-    display: block;
-    border: none;
-    list-style-type: circle;
-    text-align: left;
-    color: #545454;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    margin-top: 0;
-    margin-left: 1px;
+  border-color: #f9acb0;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-div.pinklink {
-    width: 200px;
-    border: 8px solid #545454;
-    padding: 10px;
-    margin-left: 70px;
-    margin: auto;
-    text-align: center;
-    background-color: #f9acb0;
-    color: #545454;
-    margin-top: 50px; 
+td {
+  padding: 0.625em;
+  padding-left: 1.875em;
+  text-align: left;
+}
+
+th {
+  padding: 0.625em;
+  padding-left: 1.25em;
+  text-align: left;
+}
+
+.qualities li {
+  display: block;
+  border: none;
+  list-style-type: circle;
+  text-align: left;
+  color: #545454;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9375em;
+  margin-top: 0;
+  margin-left: 0.063em;
+}
+
+.pink-link {
+  width: 12.5em;
+  border: 0.5em solid #545454;
+  padding: 0.625em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #f9acb0;
+  color: #545454;
+  margin-top: 3.125em;
 }
 
 a {
-    color: #545454;
-  }
-
-  a:hover {
-    color: #f9acb0;
-  }
-
-div.reflections {
-    box-sizing: border-box;
-    padding: 10px;
-    margin: 20px 0;
+  color: #545454;
 }
 
-div.reflections section:first-of-type p:first-of-type::first-letter {
-    font-size: 3em;
+a:hover {
+  color: #f9acb0;
+}
+
+.reflections {
+  box-sizing: border-box;
+  padding: 0.625em;
+  margin: 1.25em 0;
+}
+
+.reflections section:first-of-type p:first-of-type::first-letter {
+  font-size: 3em;
     color: #f9acb0;
     text-align: left;
     text-indent: 0em;
@@ -271,4 +275,76 @@ div.qualities li {
     }
 }
 
+/* styles for printing */
+@media print {
+  video {
+    display: none;
+  }
+  h1::before {
+    content: "McKay Lannigan";
+    width: 100%;
+    display: block;
+    font-size: 2em;
+    color: black;
+    margin-bottom: 0.5em;
+  }
   
+  body::before {
+    font-size: 1.5em;
+    margin: auto;
+    text-align: center;
+    display: block;
+    padding-top: 1.25em;
+  }
+  
+  h1 {
+    font-size: x-large;
+    color:black
+  }
+  
+  img {
+    display: none;
+  }
+  
+  p {
+    font-size: 12px;
+    padding-left: 0;
+    line-height: 1.15;
+  }
+  
+  blockquote {
+    font-family: cursive;
+  }
+  iframe {
+    display: none;
+  }
+  th, td {
+    padding: 5px;
+    text-align: left;
+  }
+  
+  .qualities table {
+    font-size: 12px;
+  }
+  
+  
+  .footer {
+    display: none;
+  }
+
+  .about-text {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 0;
+    margin-left: 0;
+  }  
+  
+  .about-img, .projecttable, .resume-link, .pinklink {
+    display: none;
+  }
+  
+@page {
+    margin: 1in;
+  }
+  
+}
