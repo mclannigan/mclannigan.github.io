@@ -5,9 +5,9 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.25em;
+  font-size: 1.5em;
   margin: 0;
-  padding-left: 1.563em;
+  padding-left: 0;
 }
 
 h1 {
@@ -177,12 +177,27 @@ div.qualities li {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 5px;
     text-align: center;
     background-color: white;
     padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: x-small !important;
+    background-image: url(images/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
   }
+
+  .footer img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  margin: 0 auto;
+  }
+  
+
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -257,6 +272,10 @@ div.qualities li {
     }
     img {
         width: 100%;
+    }
+
+    .footer img {
+      display: none;
     }
 }
 
