@@ -174,28 +174,34 @@ div.qualities li {
   
 
   .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: white;
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: x-small !important;
-    background-image: url(images/footer.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 200px;
-  }
-
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background-color: white;
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: x-small !important;
+      background-image: url(images/footer.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 200px;
+    }
+    
+  
   .footer img {
     max-width: 100%;
     height: auto;
     display: block;
-  margin: 0 auto;
+    margin: 0 auto;
   }
+  
+  .footer img:hover {
+    transform: scale(1.1);
+  }
+  
   
 
   .grid-container {
