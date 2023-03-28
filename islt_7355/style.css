@@ -255,7 +255,6 @@ div.qualities li {
 }
 
 
-
 .projecttable th {
   background-color: #f9acb0;
   text-align: left;
@@ -304,26 +303,32 @@ div.qualities li {
 
 
   
-  /* Styles for smaller screens */
-  @media screen and (max-width: 768px) {
-    table.projecttable {
-      font-size: 14px;
-    }
-    table.projecttable td {
-      padding: 8px;
-    }
-    table.projecttable th {
-      display: none
-    }
-  }
+  /* Poject Styles for smaller screens */
+    
 
 @media (max-width: 768px) {
   .projecttable thead tr {
     display:none;
   }
+
+  .projecttable {
+    width: 100%;
+  }
+  .projecttable th,
+  .projecttable td {
+    display: block;
+    padding: 10px;
+  }
+  .projecttable th {
+    text-align: left;
+  }
+  .projecttable td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }
-
-
   
     
   
@@ -422,7 +427,7 @@ div.qualities li {
   
   
   .footer {
-    display: none;
+    filter: grayscale(100%);
   }
 
   .about-text {
@@ -442,24 +447,5 @@ div.qualities li {
   
 }
 
-/* Add styles for mobile view */
-@media screen and (max-width: 600px) {
-  .projecttable {
-    width: 100%;
-  }
-  .projecttable th,
-  .projecttable td {
-    display: block;
-    padding: 10px;
-  }
-  .projecttable th {
-    text-align: left;
-  }
-  .projecttable td:before {
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-}
+
 
