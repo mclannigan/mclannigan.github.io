@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta charset="utf-8">
+       <title>Portfolio</title>
+       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="nav.css">
+       <link rel="icon" type="image/png" href="images/favicon.png">
+   </head>
+   <body>
+     <!-- (A) MENU WRAPPER -->
+     <nav id="hamnav">
+         <!-- (B) THE HAMBURGER -->
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+          <!-- (C) MENU ITEMS -->
+            <div class="dropdown" id="hamitems">
+                <ul>
+                  <li>
+                     <img src="Logo.svg" alt="logo" width="100" height="100">
+                  </li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li>
+                     <a href="project.html">Portfolio</a>
+                     <ul>
+                        <li><a href="#leadership">Project 1</a></li>
+                        <li><a href="#jamboard">Project 2</a></li>
+                        <li><a href="#soarbucks">Project 3</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="reflection.html">Reflection</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+               </ul>
+            </div>     
+           </nav> 
+               
+    <main>
+<div class ="projecttable">
+        <ul class="tabs">
+            <li><a href="#leadership">Leadership with Ted Lasso</a></li>
+            <li><a href="#jamboard">JamBoard Learning</a></li>
+            <li><a href="#soarbucks">SOARbucks</a></li>
+          </ul>
+          
+          <!-- Leadership Tab -->
+          <div id="leadership" class="tab-content">
+            <table>
+              <thead>
+                <tr>
+                  <th>Project</th>
+                  <th>Summary</th>
+                  <th>Artifacts</th>
+                  <th>Goals</th>
+                  <th>Competencies</th>
+                  <th>Alignment</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><h2>Leadership with Ted Lasso</h2></td>
+                  <td><p>This mini-course invites learners to look at the great Ted Lasso and how he is an effective leader.</p></td>
+                  <td><a href="#link1">Course Overview</a></td>
+                  <td>
+                    <h3>Goal 1: Design and develop effective learning systems with the following objectives:</h3>
+                    <ul>
+                      <li>1.1: Develop learning and performance opportunities with direct instruction, constructivist learning, collaborative work, and performance support.</li>
+                      <li>1.2: Create meaningful learning opportunities, engage students in online learning environments, and use appropriate technology and learning objects.</li>
+                      <li>1.3: Manage projects for design, development, and implementation of learning opportunities and systems.</li>
+                    </ul>
+                  </td>
+                  <td><p>I am able to design and develop innovative, aesthetic, effective and sustainable learning technologies based on theory-grounded research.</p></td>
+                  <td><p>This course offers direct instruction, collaboration, support, and virtual discussions to optimize learning in a virtual environment.</p></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <!-- JamBoard Tab -->
+          <div id="jamboard" class="tab-content">
+            <table>
+              <thead>
+                <tr>
+                  <th>Project</th>
+                  <th>Summary</th>
+                  <th>Artifacts</th>
+                  <th>Goals</th>
+                  <th>Competencies</th>
+                  <th>Alignment</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><h2>JamBoard Learning</h2></td>
+                  <td><p>Researchers found inadequate technology training in the onboarding processes for teachers and staff at Missouri Military Academy and Independent Schools of St. Louis (ISSL).</p></td>
+                  <td>
+                    <a href="#jamboardlink">Jamboard main slides</a><br>
+                    <br>
+                    <a href="FormResponses.html">Interview questions</a><br>
+                    <br>
+                    <a href="ISDProjectSummary.html">Summary</a>
+                  </td>
+                  <td>
+                    <h3>Goal 2: Front-End Analysis and System Evaluation</h3>
+                    <ul>
+                      <li>2.1: Apply theoretical frameworks and research to design learning systems</li>
+                      <li>2.2: Optimize learning analytics for measuring impact and talent development.</li>
+                    </ul>
+                  </td>
+                  <td><p>I developed critical and analytical skills for data collection and evaluation and can reflect and apply these skills to assess and evaluate learning systems.</p></td>
+                  <td><p>Improved teacher learning system through needs analysis and system evaluation at ISSL.</p></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+
+<!-- Soarbucks Tab -->
+<div id="soarbucks" class="tab-content">
+    <table>
+      <thead>
+        <tr>
+          <th>Project</th>
+          <th>Summary</th>
+          <th>Artifacts</th>
+          <th>Goals</th>
+          <th>Competencies</th>
+          <th>Alignment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><h2>SOARbucks</h2></td>
+          <td><p>I oversaw the opening of a high school coffee shop that promoted a sense of community and served as a site for community service hours.</p></td>
+          <td><a href="soarbucks.html">Detailed Overview</a> <br>
+            <br>
+            <a href="#link2">WBSs</a>
+          <td>
+            <h3>Goal 3: Foster socially responsible technology use</h3>
+            <ul>
+              <li>3.1: Develop student technology leadership and ethical awareness.</li>
+            
+            </ul>
+          </td>
+          <td><p>I created spaces for leaders and administration to give feedback and support in inclusive ways.</p></td>
+          <td><p>Leadership & Social Responsibility: <br> I developed competencies for socially responsible technology leadership.</p></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- JavaScript code to show/hide tab content -->
+<script>
+    const tabs = document.querySelectorAll('.tabs li a');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', e => {
+        e.preventDefault();
+        
+        // Hide all tab contents
+        tabContents.forEach(content => {
+          content.style.display = 'none';
+        });
+        
+        // Show the clicked tab content
+        const targetId = tab.getAttribute('href').substr(1);
+        document.getElementById(targetId).style.display = 'block';
+      });
+    });
+  </script>
+
+    </main>
+    <footer class="footer">
+      <p>
+        Author: McKay Lannigan &copy; 2023 &nbsp;&nbsp;  </p>
+        <img src="images/phone.png" alt="Phone icon">
+        <p>1-888-888-8888&nbsp;&nbsp;</p>
+        <img src="images/email.png" alt="Email icon">
+       <p><a href="mailto:mjly9k@umsystem.edu">McKay Lannigan - mjly9k@umsystem.edu</a>
+      </p>
+    </footer>
+</html>

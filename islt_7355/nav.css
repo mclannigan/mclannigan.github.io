@@ -12,7 +12,7 @@ html {
   padding-bottom: 50px;
 }
 
-div.dropdown ul {
+.dropdown ul {
   display: flex;
 }
 
@@ -101,6 +101,7 @@ nav > ul > li:hover > ul {
 
 
 /* (A) HORIZONTAL MENU ITEMS */
+
 .dropdown li {
   display: inline;
   text-align: center;
@@ -132,6 +133,26 @@ nav > ul > li:hover > ul {
 
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px) {
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    margin-left: 0;
+  }
+  .dropdown li img {
+    display: none;
+  }
+
+  .dropdown ul li ul {
+    visibility: hidden;
+    display: none;
+  }
 
   /* (A) BREAK INTO VERTICAL MENU */
   #hamitems {
@@ -139,7 +160,6 @@ nav > ul > li:hover > ul {
     align-items: center;
     justify-content: center;
   }
-
 
   /* (B) SHOW HAMBURGER ICON */
   #hamnav label {
@@ -152,12 +172,13 @@ nav > ul > li:hover > ul {
   }
 
   /* (C) TOGGLE SHOW/HIDE MENU */
-  #hamitems { display: none; }
-  #hamnav input:checked ~ #hamitems { display: block; }
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
 }
-
-
-
 
 
 

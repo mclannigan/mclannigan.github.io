@@ -85,17 +85,6 @@ th {
   margin-left: 0.063em;
 }
 
-.pink-link {
-  width: 12.5em;
-  border: 0.5em solid #545454;
-  padding: 0.625em;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  background-color: #f9acb0;
-  color: #545454;
-  margin-top: 3.125em;
-}
 
 a {
   color: #545454;
@@ -118,15 +107,15 @@ a:hover {
     text-indent: 0em;
 }
 
-div.reflections p {
+.reflections p {
     text-indent: 2em;
 }
 
-div.reflections .no-indent {
+.reflections .no-indent {
     text-indent: 0;
 }
 
-div.reflections h2 {
+.reflections h2 {
     color: #545454;
     margin: auto;
     text-align: justify;
@@ -149,7 +138,7 @@ div.reflections h2 {
     float: left;
 }
 
-div.qualities ul {
+.qualities ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,7 +146,7 @@ div.qualities ul {
     padding-left: 5px;
 }
 
-div.qualities li {
+.qualities li {
     list-style: none;
     margin: 10px 0;
 }
@@ -168,7 +157,7 @@ div.qualities li {
     justify-content: space-between;
   }
 
-  .wrapper>div {
+.wrapper>div {
     width: 48%;
   }
   
@@ -207,11 +196,78 @@ div.qualities li {
     transform: scale(1.1);
   }
   
+/* VIDEO and RESUME */
 
+  
+.shoulderpartner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.powtoon {
+  position: relative;
+  width: 100%;
+  margin-left: 20px;
+  max-width: 60%; 
+}
+
+@media screen and (min-width: 960px) {
+  .powtoon {
+    padding-bottom: 35%;
+  }
+  .pink-link {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .powtoon {
+    padding-bottom: 35%;
+    margin-bottom: 50px;
+  }
  
-  
-  
+}
 
+@media screen and (max-width: 767px) {
+  .powtoon {
+    padding-bottom:35%;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .powtoon {
+    padding-bottom: 20%;
+  }
+}
+
+.powtoon iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-color: #f9acb0;
+  border-style: dotted;
+  border-width: 10px;
+}
+
+
+
+.pink-link a {
+  flex: 1;
+  text-align: left;
+  width: 12.5em;
+  border: 0.5em solid #545454;
+  padding: 0.625em;
+  background-color: #f9acb0;
+  color: #545454;
+  margin-left: 50px;
+}
+
+/* Grid */
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -238,7 +294,7 @@ div.qualities li {
     grid-column: 1;
     grid-row: 1;
     padding-left: 100px;
-    padding-top: 50px;
+    padding-top: 100px;
   }
   
   .about-img img {
@@ -304,15 +360,17 @@ div.qualities li {
 
 
 
+
   
-  /* Poject Styles for smaller screens */
-    
+  /* Media screens */
+  
+/* Project Styles for smaller screens */
 
 @media (max-width: 768px) {
   .projecttable thead tr {
     display:none;
   }
-
+  
   .projecttable {
     width: 100%;
   }
@@ -330,50 +388,49 @@ div.qualities li {
     font-weight: bold;
     text-transform: uppercase;
   }
+  
+  /* other styles */
+  
+  .shoulderpartner {
+    flex-direction: column;
+    align-items: center;
+  }
+  
 }
   
-    
-  
-
-
 
 /* Media screens */
-  
-@media screen and (max-width: 959px) {
-    #container {
-        width: 100%;
-    }
-    #right-column {
-        width: 30%;
-    }
 
-    #left-column {
-        width: 70%;
-        text-align: left;
-    }
-    img {
-        width: 100%;
-    }
+@media screen and (min-width: 769px) and (max-width: 959px) {
+  .shoulderpartner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .footer img {
-      display: none;
-    }
+  .pink-link {
+    margin-top: 20px;
+  }
+
 }
 
 @media screen and (max-width: 640px) {
-    #right-column {
-        width: 100%;
-    }
-    #left-column {
-        width: 100%;
-    }
+  #right-column {
+    width: 100%;
+  }
+  
+  #left-column {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 320px) {
-    #container {
-        width: 320px;
-    }
+  #container {
+    width: 320px;
+  }
 }
+
 
 /* styles for printing */
 @media print {
@@ -439,7 +496,7 @@ div.qualities li {
     margin-left: 0;
   }  
   
-  .about-img, .projecttable, .resume-link, .pinklink {
+  .about-img, .projecttable, .pink-link {
     display: none;
   }
   
@@ -448,6 +505,5 @@ div.qualities li {
   }
   
 }
-
 
 
