@@ -408,7 +408,7 @@ a:hover {
   }
   
   button[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #f9acb0;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -418,7 +418,7 @@ a:hover {
   }
   
   button[type="submit"]:hover {
-    background-color: #3e8e41;
+    background-color: #f9acb0;
   }
  
 @media screen and (max-width: 600px) {
